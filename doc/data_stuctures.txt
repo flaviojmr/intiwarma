@@ -1,0 +1,13 @@
+# Data Structure:
+# ticket:       list of itemT ->    [[], [], ..., []]
+# orden:        list of itemO ->    [[], [], ..., []]
+
+# itemT:	if shawarma: [categoria, producto, adicional, extra, precio], 
+		elif bebida: [categoria, producto, precio],
+		elif papas: [categoria, producto, adicional, precio]     -> 
+		
+		categoria: 0: shawarma, 1: bebida, 2: papas
+
+# itemO:	if shawarma: [producto, adicional, extra, cremas],
+		elif bebida: [producto],
+		elif papas: [producto, adicional]

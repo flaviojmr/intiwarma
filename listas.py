@@ -1,0 +1,7 @@
+listasTiposList = ["tipoProdList", "individualesList", "combosPersonalesList", "combos2MasList", "extrasList", "adicionalesList"] 
+tipoProdList = ["Individuales","Combos personales","Combos +2", "Extras", "Adicionales"]
+individualesList = [["Chanqawarma", 13.90], ["Dusiwarma", 14.90], ["Pachawarma", 15.90], ["Intiwarma", 16.90], ["Charapawarma", 17.90], ["Taypawarma", 18.90]]
+combosPersonalesList = [["Combo Chanqa", 21.90], ["Combo Dusi", 22.90], ["Combo Pacha", 23.90], ["Combo Inti", 24.90], ["Combo Charapa", 25.90], ["Combo Taypa", 26.90]]
+combos2MasList = [["Combo Duo", 39.90], ["Combo Dupla", 44.90], ["Combo Trío", 58.90], ["Combo Familia", 69.90]]
+extrasList = [["Pollo adicional (+50%)", 3.00], ["Papas + Chicha", 8.00], ["Chorizo en Papas Nativas", 2.00]]
+adicionalesList = [["Jamón", 2.00], ["Queso", 2.00], ["Huevo", 2.00], ["BBQ", 2.00], ["Chorizo", 4.00], ["Tocino", 4.00], ["Cecina", 5.00], ["Papas Nativas", 7.90], ["Malta/Colita", 7.00], ["Gaseosa", 5.00], ["Chicha", 7.00]]
