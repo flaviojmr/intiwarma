@@ -35,22 +35,32 @@ while(True):
         # crear orden, crear ticket, cuenta = 0
         #cTicket()
         ordenAc = cOrden()
+        ticket = cTicket()
         
         anhadirProducto(orden = ordenAc)
 
     elif inicio == "2":
-        print("Usted desea añadir un nuevo producto, continúe")
-        anhadirProducto()
+        #check = 'ordenAc' in locals()
+        if 'ordenAc' not in locals():
+            print("¡ALERTA! > Primero debe iniciar la orden\n")
+        elif len(ordenAc) >= 1:
+            print("Usted desea añadir un nuevo producto, continúe:")
+            anhadirProducto(orden = ordenAc)
+        else:
+            print("Se ha producido un error inesperado")
 
     elif inicio == "3":
         # imprimir datos en pantalla
-        #rOrden()
         print("Esta es la orden: ", "gg")
+        rOrden(ordenAc)
+        rTicket(ticket)
 
     elif inicio == "4":
         # mostrar pedido, tanto orden como ticket, enviar a cocina y facturar
         # borrar ticket de temporal y mandarlo a BBDD o permanente
         print("Orden confirmada")
+        rOrden(ordenAc)
+        rTicket(ticket)
         break
         
     else:

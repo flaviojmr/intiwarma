@@ -47,8 +47,9 @@ def anhadirShawarma(saborShawarma = None):
             # adicional = adicionalesList[inputAdicional-1]
                 adicional.append(adicionalesList[int(inputAdicional)-1][0])
             #añadir adicional
-                for i in range(len(adicional)):
-                    strAdicional = strAdicional + adicional[i]
+                strAdicional = adicional[0]
+                for i in range(1, len(adicional)):
+                    strAdicional = strAdicional + ", " + adicional[i]
                 print("Los adicionales son:", strAdicional)
             else:
                 print("Ha seleccionado un valor incorrecto")
@@ -56,8 +57,9 @@ def anhadirShawarma(saborShawarma = None):
             if len(adicional) == 0:
                 print("Sin adicionales")
             elif len(adicional) > 0:
+                strAdicional = adicional[0]
                 for i in range(len(adicional)):
-                    strAdicional = strAdicional + adicional[i]
+                    strAdicional = strAdicional + ", " + adicional[i]
                 print("Los adicionales son:", strAdicional)
             else:
                 print("error inesperado")
@@ -315,10 +317,9 @@ def anhadirProducto(orden):
             print("Ha seleccionado un valor incorrecto")'''
     return "1"
 
-def cTicket(prod):
+def cTicket():
     ticket = list()
     cuenta = 0
-    #ticket.append(prod)
     return ticket
 
 def rTicket(ticket):
@@ -332,7 +333,7 @@ def uTicket(ticket, itemT):
     return "1"
 
 def dTicket(ticket):
-    ticket = list()                 #vaciar la lista
+    ticket = list()                 #vaciar la lista    #del ticket
     print("Ticket eliminado")
     return 1
 
@@ -342,7 +343,7 @@ def cOrden():
 
 def rOrden(orden):
     for i in range(len(orden)):
-        print(str(i+1) + "." + orden[i])
+        print(str(i+1) + ".", orden[i])
     print(orden)
 
 def uOrden(orden, itemO):
@@ -350,7 +351,7 @@ def uOrden(orden, itemO):
     return 1
 
 def dOrden(orden):
-    orden = list()                  # vaciar la lista
+    orden = list()                  # vaciar la lista   #del orden
     print("Orden eliminada")
     return 1
 
